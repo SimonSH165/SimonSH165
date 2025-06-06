@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>SimonSH165</title>
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body, html {
+      height: 100%;
+      font-family: Arial, sans-serif;
+      scroll-behavior: smooth;
+      background-color: #0d0d0d;
+      color: white;
+    }
+
+    /* Menu */
+    .menu-icon {
+      position: fixed;
+      top: 20px;
+      right: 20px;
+      cursor: pointer;
+      z-index: 1000;
+    }
+    .menu-icon div {
+      width: 30px;
+      height: 3px;
+      background-color: white;
+      margin: 6px 0;
+    }
+    .menu {
+      display: none;
+      position: fixed;
+      top: 60px;
+      right: 20px;
+      background-color: #111;
+      padding: 10px 20px;
+      border-radius: 10px;
+      z-index: 999;
+    }
+    .menu a {
+      color: #00adee;
+      text-decoration: none;
+      display: block;
+      margin: 10px 0;
+    }
+    .menu.show { display: block; }
+
+    /* Hero */
+    .hero {
+      height: 100vh;
+      background-image: url('your-image.jpg'); /* Replace with your uploaded image */
+      background-size: cover;
+      background-position: center;
+      position: relative;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+    .overlay {
+      position: absolute;
+      top: 0; left: 0;
+      height: 100%; width: 100%;
+      background-color: rgba(0, 0, 0, 0.6);
+    }
+    .text {
+      position: relative;
+      z-index: 2;
+      color: #00adee;
+      font-size: 3rem;
+      text-shadow: 2px 2px 8px #000;
+    }
+
+    .section {
+      padding: 60px 20px;
+      text-align: center;
+    }
+    .section img {
+      max-width: 90%;
+      height: auto;
+      border-radius: 20px;
+      box-shadow: 0 0 20px #00adee55;
+    }
+    .section h2 {
+      margin-top: 30px;
+      font-size: 2rem;
+      color: #00adee;
+    }
+    .section p {
+      font-size: 1.2rem;
+      margin-top: 10px;
+      max-width: 700px;
+      margin-left: auto;
+      margin-right: auto;
+    }
+    a { color: #00adee; text-decoration: none; }
+  </style>
+</head>
+<body>
+
+  <!-- Menu -->
+  <div class="menu-icon" onclick="toggleMenu()">
+    <div></div><div></div><div></div>
+  </div>
+  <div class="menu" id="menu">
+    <a href="#channels">Channels</a>
+    <a href="#contact">Contact</a>
+  </div>
+
+  <!-- Welcome Section -->
+  <div class="hero">
+    <div class="overlay"></div>
+    <div class="text">Welcome</div>
+  </div>
+
+  <!-- Fortnite -->
+  <div class="section">
+    <img src="https://upload.wikimedia.org/wikipedia/en/thumb/0/07/Fortnite_Save_The_World.jpg/220px-Fortnite_Save_The_World.jpg" alt="Fortnite" />
+    <h2>I play Fortnite</h2>
+    <p>I enjoy playing Fortnite and continue improving. I'm skilled and always open to playing with anyone on the Europe servers!</p>
+  </div>
+
+  <!-- War Robots -->
+  <div class="section">
+    <img src="https://play-lh.googleusercontent.com/K0sMFNjcWJYzIoMdy6jYY59tqz7Xv8vW-h02DQzC_JCrgvMeJD_1-QqmpKPRGEOWYEU=w240-h480-rw" alt="War Robots" />
+    <h2>I play War Robots</h2>
+    <p>I'm really good at War Robots and always getting better. I’m ready to play with anyone who wants to join!</p>
+  </div>
+
+  <!-- Channels -->
+  <div class="section" id="channels">
+    <h2>My Channels</h2>
+    <p>
+      <a href="https://www.youtube.com/@SimonSH165" target="_blank">YouTube</a><br />
+      <a href="https://www.tiktok.com/@simonsh165" target="_blank">TikTok</a><br />
+      <a href="https://www.twitch.tv/SimonSH165" target="_blank">Twitch</a><br />
+      <a href="https://www.instagram.com/SimonSH165" target="_blank">Instagram</a><br />
+      <a href="https://kick.com/SimonSH165" target="_blank">Kick</a><br />
+      <a href="https://www.facebook.com/S1monSH165" target="_blank">Facebook</a><br />
+      <a href="https://discord.gg/9kfrGeqK" target="_blank">Discord Group</a><br />
+      Discord username: <strong>SimonSH165</strong>
+    </p>
+  </div>
+
+  <!-- Contact -->
+  <div class="section" id="contact">
+    <h2>Contact Me</h2>
+    <p>Email: <a href="mailto:Simon.mhanna69@gmail.com">Simon.mhanna69@gmail.com</a><br />
+       Phone: <a href="tel:0790398247">0790398247</a></p>
+  </div>
+
+  <script>
+    function toggleMenu() {
+      document.getElementById("menu").classList.toggle("show");
+    }
+  </script>
+
+</body>
+</html>
